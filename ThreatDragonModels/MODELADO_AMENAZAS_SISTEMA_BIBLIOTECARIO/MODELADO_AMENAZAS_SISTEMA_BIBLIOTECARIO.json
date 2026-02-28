@@ -435,7 +435,7 @@
           },
           {
             "position": {
-              "x": 650,
+              "x": 770,
               "y": 280
             },
             "size": {
@@ -594,8 +594,8 @@
           },
           {
             "position": {
-              "x": 842,
-              "y": 160
+              "x": 840,
+              "y": 120
             },
             "size": {
               "width": 120,
@@ -899,6 +899,280 @@
             },
             "width": 200,
             "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Web Response",
+              "description": "Respuestas enviadas por la aplicación hacia los usuarios.",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "5d646ea8-46f9-4ccd-bd66-51194dcdaa84",
+                  "title": "El flujo de datos debe utilizar HTTP/S",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Information disclosure",
+                  "description": "Estas respuestas se transmiten a través de la Internet pública y podrían ser interceptadas por un atacante.",
+                  "mitigation": "Las respuestas deberían requerir HTTP/S. Esto proporcionará confidencialidad e integridad. HTTP no debe ser compatible.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 9,
+                  "score": ""
+                }
+              ],
+              "trustBoundaryIds": [],
+              "threatFrequency": {
+                "tampering": 0,
+                "informationDisclosure": 1,
+                "denialOfService": 0
+              }
+            },
+            "labels": [
+              "Web Response"
+            ],
+            "id": "843df905-9d35-475a-845c-2a0e7f7f779f",
+            "source": {
+              "cell": "d58130fa-a01e-4f19-a45e-c6f7476276f6",
+              "port": "795afd99-c5d7-4319-aa79-91e538779b6b"
+            },
+            "target": {
+              "cell": "b2d2928a-6ec6-465f-96d9-2913d66f1205",
+              "port": "431ac2b0-5e84-4042-8085-ab47b5fcaa16"
+            },
+            "vertices": [
+              {
+                "x": 390,
+                "y": 50
+              },
+              {
+                "x": 230,
+                "y": 50
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Web Request",
+              "description": "Respuestas recibidas por la aplicación hacia los bibliotecarios.",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "ad9b4f1b-1254-4356-acad-11863afa9d47",
+                  "title": "El flujo de datos debe utilizar HTTP/S",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Information disclosure",
+                  "description": "Estas respuestas se transmiten a través de la Internet pública y podrían ser interceptadas por un atacante.",
+                  "mitigation": "Las respuestas deberían requerir HTTP/S. Esto proporcionará confidencialidad e integridad. HTTP no debe ser compatible.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 10,
+                  "score": ""
+                }
+              ],
+              "trustBoundaryIds": [],
+              "threatFrequency": {
+                "tampering": 0,
+                "informationDisclosure": 1,
+                "denialOfService": 0
+              }
+            },
+            "labels": [
+              "Web Request"
+            ],
+            "id": "6226d2be-845b-491c-a3ce-4b6bd3de6e61",
+            "source": {
+              "x": 150,
+              "y": 310
+            },
+            "target": {
+              "cell": "d58130fa-a01e-4f19-a45e-c6f7476276f6",
+              "port": "d9bd0d04-b133-4282-a762-b8838b488d76"
+            },
+            "vertices": [
+              {
+                "x": 260,
+                "y": 290
+              },
+              {
+                "x": 280,
+                "y": 210
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Web Response",
+              "description": "Respuestas enviadas por la aplicación hacia los bibliotecarios.",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "f9711045-8ebd-42d0-a075-d712e70eec19",
+                  "title": "El flujo de datos debe utilizar HTTP/S",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Information disclosure",
+                  "description": "Estas respuestas se transmiten a través de la Internet pública y podrían ser interceptadas por un atacante.",
+                  "mitigation": "Las respuestas deberían requerir HTTP/S. Esto proporcionará confidencialidad e integridad. HTTP no debe ser compatible.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 11,
+                  "score": ""
+                }
+              ],
+              "trustBoundaryIds": [],
+              "threatFrequency": {
+                "tampering": 0,
+                "informationDisclosure": 1,
+                "denialOfService": 0
+              }
+            },
+            "labels": [
+              "Web Response"
+            ],
+            "id": "71b49717-a918-498b-9c30-24d1e355c7eb",
+            "source": {
+              "x": 430,
+              "y": 240
+            },
+            "target": {
+              "cell": "89d0e73a-4e27-4e23-a6c9-65051dd97837",
+              "port": "431ac2b0-5e84-4042-8085-ab47b5fcaa16"
+            },
+            "vertices": [
+              {
+                "x": 390,
+                "y": 310
+              },
+              {
+                "x": 240,
+                "y": 330
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": "4 3"
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Páginas",
+              "description": "Páginas web leídas desde el disco.",
+              "outOfScope": true,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Páginas"
+            ],
+            "id": "cd0a1e4c-b3a4-43f0-bdf1-bf51b5f00a00",
+            "source": {
+              "cell": "48b95963-087f-4a56-8f49-0cae612e59d0",
+              "port": "cae00d60-3b60-4877-b1d2-e87573811daf"
+            },
+            "target": {
+              "cell": "d58130fa-a01e-4f19-a45e-c6f7476276f6",
+              "port": "f748aeaa-f1b0-46bc-9cf6-b4984e3d69f7"
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
             "zIndex": 12,
             "connector": "smooth",
             "data": {
@@ -969,7 +1243,7 @@
                 "sourceMarker": {
                   "name": ""
                 },
-                "strokeDasharray": null
+                "strokeDasharray": "4 3"
               }
             },
             "width": 200,
@@ -978,9 +1252,9 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
-              "description": "",
-              "outOfScope": false,
+              "name": "Lee web app config",
+              "description": "Archivo físico de configuración leído desde el disco.",
+              "outOfScope": true,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
               "hasOpenThreats": false,
@@ -992,37 +1266,23 @@
               "trustBoundaryIds": []
             },
             "labels": [
-              "Data Flow"
+              "Lee web app config"
             ],
-            "id": "1f3764a8-983a-4dc1-a2c1-b6a95351d46c",
+            "id": "caf0fa90-91d8-4828-b18a-a5ca57bfb130",
             "source": {
-              "cell": "d58130fa-a01e-4f19-a45e-c6f7476276f6",
-              "port": "795afd99-c5d7-4319-aa79-91e538779b6b"
+              "x": 650,
+              "y": 70
             },
             "target": {
-              "cell": "b2d2928a-6ec6-465f-96d9-2913d66f1205",
-              "port": "431ac2b0-5e84-4042-8085-ab47b5fcaa16"
-            },
-            "vertices": [
-              {
-                "x": 350,
-                "y": 110
-              },
-              {
-                "x": 320,
-                "y": 50
-              },
-              {
-                "x": 310,
-                "y": 40
-              }
-            ]
+              "cell": "d58130fa-a01e-4f19-a45e-c6f7476276f6",
+              "port": "795afd99-c5d7-4319-aa79-91e538779b6b"
+            }
           }
         ]
       }
     ],
     "diagramTop": 1,
     "reviewer": "Guillermo Humberto Vera Amaro",
-    "threatTop": 8
+    "threatTop": 11
   }
 }
