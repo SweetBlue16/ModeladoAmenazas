@@ -1212,93 +1212,88 @@
             ],
             "id": "82264320-b723-4e81-93a4-0ba77efefa4d",
             "source": {
-              "x": 480,
-              "y": 190
+              "cell": "d58130fa-a01e-4f19-a45e-c6f7476276f6",
+              "port": "f748aeaa-f1b0-46bc-9cf6-b4984e3d69f7"
             },
             "target": {
               "cell": "d678536b-b6da-4f5d-86bd-5096d7effca4",
               "port": "cae00d60-3b60-4877-b1d2-e87573811daf"
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead"
-              ],
-              "name": null
             }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Resultados Web App Query",
+              "description": "Datos recuperados desde la base de datos.",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "f4225058-f274-411d-bbfa-715105051818",
+                  "title": "Ataque Man-in-the-Middle",
+                  "status": "Mitigated",
+                  "severity": "Low",
+                  "type": "Information disclosure",
+                  "description": "Un atacante podría interceptar las consultas de la base de datos en tránsito y obtener información confidencial, como credenciales de la base de datos, parámetros de consulta o resultados de la consulta (es poco probable ya que el flujo de datos se realiza a través de una red privada).",
+                  "mitigation": "Aplicar una conexión cifrada en el servidor de base de datos.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 13,
+                  "score": ""
+                }
+              ],
+              "trustBoundaryIds": [],
+              "threatFrequency": {
+                "tampering": 0,
+                "informationDisclosure": 1,
+                "denialOfService": 0
+              }
+            },
+            "labels": [
+              "Resultados Web App Query"
+            ],
+            "id": "82878946-bc58-4368-8bd1-3abd50fa787b",
+            "source": {
+              "x": 820,
+              "y": 310
+            },
+            "target": {
+              "cell": "d58130fa-a01e-4f19-a45e-c6f7476276f6",
+              "port": "114a9705-f52c-4a9e-abbc-dae6d540be9d"
+            },
+            "vertices": [
+              {
+                "x": 700,
+                "y": 330
+              },
+              {
+                "x": 510,
+                "y": 310
+              }
+            ]
           },
           {
             "shape": "flow",
@@ -1421,12 +1416,46 @@
               "cell": "d58130fa-a01e-4f19-a45e-c6f7476276f6",
               "port": "795afd99-c5d7-4319-aa79-91e538779b6b"
             }
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 14,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "Usuario/Web\nserver límite",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [],
+              "containedElements": []
+            },
+            "labels": [
+              "Usuario/Web\nserver límite"
+            ],
+            "id": "c392b8a7-1456-4b94-9fe6-d10a21d3f3f6",
+            "source": {
+              "x": 130,
+              "y": 20
+            },
+            "target": {
+              "x": 140,
+              "y": 370
+            },
+            "vertices": [
+              {
+                "x": 200,
+                "y": 70
+              }
+            ]
           }
         ]
       }
     ],
     "diagramTop": 1,
     "reviewer": "Guillermo Humberto Vera Amaro",
-    "threatTop": 12
+    "threatTop": 13
   }
 }
